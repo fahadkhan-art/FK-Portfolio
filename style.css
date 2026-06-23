@@ -1,0 +1,201 @@
+/* ---------------------------------------------------------
+   Fahad Khan | Premium Portfolio Stylesheet
+   --------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Noto+Sans+Urdu:wght@400;600;700&display=swap');
+
+:root {
+  --color-bg-dark: #0a0a0a;       /* Refined deep minimalist dark from Artistic Flair */
+  --color-bg-card: rgba(255, 255, 255, 0.02); /* Minimal transparent white overlay */
+  --color-accent-teal: #f59e0b;   /* Luxury rich Amber accent from Artistic Flair */
+  --color-accent-violet: #d97706; /* Core Gold/Orange accent pairing */
+  
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-urdu: 'Noto Sans Urdu', 'Noto Nastaliq Urdu', serif;
+}
+
+/* Base resets & custom smooth scroll */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  font-family: var(--font-body);
+  color: #f2f2f2; /* Exquisite light off-white from Artistic Flair */
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar - Refined Amber flair */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #1c1c1c;
+  border-radius: 9999px;
+  border: 1px solid #0a0a0a;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-teal);
+}
+
+/* CSS Typography classes and specific helpers */
+.font-display { font-family: var(--font-display); }
+.font-urdu { font-family: var(--font-urdu); }
+
+/* Premium Grid & Background effects */
+.cyber-grid {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(160px);
+  opacity: 0.08; /* Subtler artistic glow */
+  pointer-events: none;
+  z-index: 0;
+  transition: all 0.8s ease-in-out;
+}
+
+/* Custom transitions and interactive transforms */
+.glass-panel {
+  background: var(--color-bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(245, 158, 11, 0.3);
+  box-shadow: 0 12px 40px rgba(245, 158, 11, 0.06);
+  transform: translateY(-2px);
+}
+
+/* Highlight badge */
+.badge-premium {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, rgba(217, 119, 6, 0.08) 100%);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  color: #fbbf24;
+}
+
+/* Smooth active menu indicators */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  background: linear-gradient(90deg, var(--color-accent-teal), var(--color-accent-violet));
+  transform-origin: bottom right;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Dynamic text gradients - Refined warm gold/amber spectrum */
+.text-gradient-primary {
+  background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-teal {
+  background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-violet {
+  background: linear-gradient(135deg, #f59e0b 0%, #78350f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Interactive project cards filtering */
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+.project-card.hidden {
+  opacity: 0;
+  transform: scale(0.95);
+  display: none;
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.08; transform: scale(1); }
+  50% { opacity: 0.16; transform: scale(1.08); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s ease-in-out infinite;
+}
+
+/* Reveal on scroll system */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom interactive neural-net canvas background */
+#neural-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.18;
+}
+
+/* Custom CSS filter buttons design */
+.filter-btn {
+  transition: all 0.3s ease;
+}
+.filter-btn.active {
+  background-color: var(--color-accent-teal);
+  color: #0a0a0a;
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.35);
+  border-color: transparent;
+}

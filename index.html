@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fahad Khan | AI Educator, Community Innovator & Founder</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Official portfolio of Fahad Khan, a pioneering AI Educator, Digital Creator, and Community Innovator focused on Urdu AI, rural innovation, and social impact.">
+  <meta name="keywords" content="Fahad Khan, Urdu AI, rural innovation, AI education, digital creator, community innovator, social business">
+  
+  <!-- Tailwind CSS Engine 4.0 -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  
+  <!-- Custom Premium Styles -->
+  <link rel="stylesheet" href="./style.css">
+  
+  <!-- Lucide Icons Library For Modern Clean Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#0a0a0a] text-slate-100 font-sans selection:bg-amber-500/30 selection:text-amber-200 antialiased overflow-x-hidden">
+
+  <!-- Cybernetic Grid Backdrop -->
+  <div class="fixed inset-0 cyber-grid opacity-60 pointer-events-none z-0"></div>
+
+  <!-- Ambient Glow Elements -->
+  <div class="glow-orb w-[400px] h-[400px] bg-amber-500 top-[-100px] left-[-100px] animate-pulse-slow"></div>
+  <div class="glow-orb w-[500px] h-[500px] bg-amber-600 bottom-[-200px] right-[-100px] animate-pulse-slow" style="animation-delay: 3s;"></div>
+
+  <!-- Header & Navigation -->
+  <header class="fixed top-0 left-0 w-full z-40 bg-[#0a0a0a]/70 backdrop-blur-md border-b border-white/5 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      
+      <!-- Premium Personal Brand Logo -->
+      <a href="#hero" class="flex items-center gap-2.5 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center font-display font-bold text-lg text-white shadow-lg shadow-amber-500/10 group-hover:scale-105 transition-all duration-300">
+          FK
+        </div>
+        <div class="flex flex-col">
+          <span class="font-display font-bold text-base tracking-wide leading-none group-hover:text-amber-400 transition-colors duration-200">FAHAD KHAN</span>
+          <span class="text-[9px] font-mono tracking-widest text-slate-400 font-semibold mt-0.5">CREATOR • FOUNDER • EDUCATOR</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navbar -->
+      <nav class="hidden md:flex items-center gap-8 font-sans text-[13px] font-semibold tracking-wider text-slate-300">
+        <a href="#about" class="nav-link hover:text-white transition-colors duration-200">ABOUT</a>
+        <a href="#projects" class="nav-link hover:text-white transition-colors duration-200">PROJECTS</a>
+        <a href="#initiatives" class="nav-link hover:text-white transition-colors duration-200">INITIATIVES</a>
+        <a href="#skills" class="nav-link hover:text-white transition-colors duration-200">SKILLS</a>
+        <a href="#impact" class="nav-link hover:text-white transition-colors duration-200">IMPACT</a>
+        <a href="#contact" class="px-5 py-2.5 rounded-full border border-amber-500/20 bg-amber-500/5 hover:bg-amber-500/10 hover:border-amber-500/40 text-amber-300 hover:text-amber-100 font-semibold tracking-wider transition-all duration-300 flex items-center gap-2">
+          <span>CONTACT</span>
+          <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+        </a>
+      </nav>
+
+      <!-- Mobile Nav Toggle button -->
+      <button id="mobile-menu-toggle" aria-label="Toggle Navigation Screen" class="md:hidden w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:text-white hover:bg-white/10 transition-colors z-50">
+        <i data-lucide="menu" class="w-5 h-5"></i>
+        <i data-lucide="x" class="w-5 h-5 hidden"></i>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Menu Dropdown -->
+  <div id="mobile-menu" class="hidden fixed inset-0 z-30 bg-[#0a0a0a]/98 backdrop-blur-xl flex-col items-center justify-center gap-8 text-neutral-200 transition-all duration-300">
+    <a href="#about" class="mobile-menu-link font-display text-xl tracking-wider font-medium hover:text-amber-400 transition-colors">About Story</a>
+    <a href="#projects" class="mobile-menu-link font-display text-xl tracking-wider font-medium hover:text-amber-400 transition-colors">Key Projects</a>
+    <a href="#initiatives" class="mobile-menu-link font-display text-xl tracking-wider font-medium hover:text-amber-400 transition-colors">Core Initiatives</a>
+    <a href="#skills" class="mobile-menu-link font-display text-xl tracking-wider font-medium hover:text-amber-400 transition-colors">Expertise Map</a>
+    <a href="#impact" class="mobile-menu-link font-display text-xl tracking-wider font-medium hover:text-amber-400 transition-colors">Impact &amp; Highlights</a>
+    <a href="#contact" class="mobile-menu-link font-display text-xl tracking-wider font-medium text-amber-400 hover:text-amber-300 font-bold flex items-center gap-2">
+      <span>Get in Touch</span>
+      <i data-lucide="arrow-right" class="w-4 h-4"></i>
+    </a>
+  </div>
+
+  <!-- Main Scroll Body -->
+  <main class="relative z-10 pt-20">
+
+    <!-- 1. HERO SECTION -->
+    <section id="hero" class="relative min-h-[92vh] flex items-center justify-center px-6 py-20 overflow-hidden">
+      <!-- Neural Net Canvas Particle backdrop -->
+      <canvas id="neural-canvas"></canvas>
+
+      <div class="max-w-5xl mx-auto text-center relative z-10">
+        
+        <!-- Live Badge Callout -->
+        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-amber-500/20 bg-amber-500/10 text-amber-300 font-mono text-xs tracking-wider font-semibold mb-8 reveal shadow-sm">
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+          <span>EMPOWERING COMMUNITIES VIA URDU AI &amp; INNOVATION</span>
+        </div>
+
+        <!-- Visionary Tagline & Name -->
+        <h1 class="reveal font-display font-extrabold text-5xl md:text-8xl tracking-tight leading-none mb-6">
+          <span class="block text-slate-300/40 text-2xl md:text-3xl tracking-widest font-mono font-medium mb-4">Visionary Educator &amp; Founder</span>
+          <span class="text-gradient-primary">Fahad Khan</span>
+        </h1>
+
+        <p class="reveal max-w-2xl mx-auto text-slate-400 font-sans text-base md:text-xl font-light leading-relaxed mb-10">
+          Bridging the linguistic gap in global AI education. Cultivating decentralized, community-first grassroots innovation channels to bring advanced technology straight to rural areas.
+        </p>
+
+        <!-- Call to actions -->
+        <div class="reveal flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#projects" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold font-display tracking-wide shadow-lg shadow-amber-500/20 hover:shadow-amber-400/30 transform hover:-translate-y-0.5 transition-all duration-300 text-center flex items-center justify-center gap-2.5">
+            <span>Explore My Work</span>
+            <i data-lucide="compass" class="w-5 h-5"></i>
+          </a>
+          <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 border border-white/10 hover:border-amber-500/40 hover:bg-slate-850 text-slate-100 font-semibold tracking-wide hover:-translate-y-0.5 transition-all duration-300 text-center flex items-center justify-center gap-2">
+            <span>Collaborate</span>
+            <i data-lucide="users" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 text-slate-500 hover:text-amber-400 transition-colors duration-300 cursor-pointer">
+          <span class="text-[10px] font-mono tracking-widest uppercase">Scroll Down</span>
+          <i data-lucide="chevron-down" class="w-4 h-4 animate-bounce"></i>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. ABOUT STORY SECTION -->
+    <section id="about" class="py-24 px-6 relative">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Grid layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Column left: Story Narrative -->
+          <div class="lg:col-span-7 space-y-8">
+            <div class="space-y-4">
+              <span class="font-mono text-amber-400 font-bold text-xs tracking-widest uppercase block reveal">MY VISION</span>
+              <h2 class="font-display font-extrabold text-3xl md:text-5xl tracking-tight text-white reveal leading-tight">
+                Pioneering the Future of Localized AI Education.
+              </h2>
+            </div>
+
+            <!-- Bilingual Graphic Block -->
+            <div class="p-6 rounded-2xl glass-panel relative overflow-hidden group reveal">
+              <div class="absolute right-[-40px] bottom-[-40px] text-amber-500/5 font-urdu font-bold text-9xl pointer-events-none select-none transition-transform duration-700 group-hover:scale-110">
+                علم
+              </div>
+              <p class="font-urdu text-lg md:text-2xl leading-relaxed text-amber-300 mb-2">
+                "ٹیکنالوجی کو عام کرنا اور اردو بولنے والوں کو مصنوعی ذہانت (AI) سے آراستہ کرنا میرا نصب العین ہے۔"
+              </p>
+              <p class="font-mono text-xs text-slate-500">
+                - DEMOCRATIZING AI EDUCATION FOR NATIVE LANGUAGE SPEAKERS
+              </p>
+            </div>
+
+            <div class="space-y-6 text-slate-300 text-base md:text-lg font-light leading-relaxed reveal">
+              <p>
+                My journey begins at the intersection of technology and humanity. As the digital divide expands, native language barriers and isolated rural settings prevent millions of talented young minds from seizing the potential of artificial general intelligence (AGI).
+              </p>
+              <p>
+                As a designer, LLM curator, and builder, I construct practical tools that translate complex algorithmic processes into localized dialects. Backed by community action, we establish solar-powered mesh platforms and learning labs straight in the hearts of remote Pakistani regions.
+              </p>
+              <p>
+                My work centers on the synthesis of <strong class="text-white font-medium">Urdu NLP toolkits</strong>, curriculum creation, and founder-level partnerships that convert technical education into direct, real-world micro-economies.
+              </p>
+            </div>
+
+            <!-- Badges -->
+            <div class="flex flex-wrap gap-2.5 pt-4 reveal">
+              <span class="px-4 py-2 rounded-xl bg-slate-900 border border-white/5 text-sm text-slate-300 hover:border-amber-500/20 transition-all">#UrduAI</span>
+              <span class="px-4 py-2 rounded-xl bg-slate-900 border border-white/5 text-sm text-slate-300 hover:border-amber-500/20 transition-all">#RuralTechLabs</span>
+              <span class="px-4 py-2 rounded-xl bg-slate-900 border border-white/5 text-sm text-slate-300 hover:border-amber-500/20 transition-all">#SocialDesign</span>
+              <span class="px-4 py-2 rounded-xl bg-slate-900 border border-white/5 text-sm text-slate-300 hover:border-amber-500/20 transition-all">#CommunityFirst</span>
+            </div>
+          </div>
+
+          <!-- Column right: Concept Cards / Highlights -->
+          <div class="lg:col-span-5 grid grid-cols-1 gap-6">
+            
+            <!-- Vision Card 1 -->
+            <div class="p-8 rounded-2xl glass-panel relative border border-white/5 overflow-hidden group reveal">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 border border-amber-500 /20 group-hover:scale-110 transition-transform duration-300">
+                  <i data-lucide="languages" class="w-6 h-6"></i>
+                </div>
+                <div class="space-y-2">
+                  <h3 class="font-display font-bold text-xl text-white">Urdu AI Advocate</h3>
+                  <p class="text-sm text-slate-400 font-light leading-relaxed">
+                    Pioneering localized NLP frameworks, custom prompts, and guides to enable Millions of Urdu speakers to utilize advanced intelligence safely.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Vision Card 2 -->
+            <div class="p-8 rounded-2xl glass-panel relative border border-white/5 overflow-hidden group reveal" style="animation-delay: 200ms;">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-amber-600/10 flex items-center justify-center text-amber-500 border border-amber-600/20 group-hover:scale-110 transition-transform duration-300">
+                  <i data-lucide="map" class="w-6 h-6"></i>
+                </div>
+                <div class="space-y-2">
+                  <h3 class="font-display font-bold text-xl text-white">Rural Tech Architect</h3>
+                  <p class="text-sm text-slate-400 font-light leading-relaxed">
+                    Establishing decentralized high-tech hubs equipped with microcomputers and open-source curriculums directly within rural school networks.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Vision Card 3 -->
+            <div class="p-8 rounded-2xl glass-panel relative border border-white/5 overflow-hidden group reveal" style="animation-delay: 400ms;">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 border border-amber-500/20 group-hover:scale-110 transition-transform duration-300">
+                  <i data-lucide="award" class="w-6 h-6"></i>
+                </div>
+                <div class="space-y-2">
+                  <h3 class="font-display font-bold text-xl text-white">Social Educator &amp; Mentor</h3>
+                  <p class="text-sm text-slate-400 font-light leading-relaxed">
+                    Cultivating micro-entrepreneurship programs that help creators turn localized products into high-income digital platforms.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. PROJECTS SECTION -->
+    <section id="projects" class="py-24 px-6 bg-slate-950/20 relative">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-6 mb-12">
+          <div class="space-y-4">
+            <span class="font-mono text-amber-400 font-bold text-xs tracking-widest uppercase block reveal">CURATED WORK</span>
+            <h2 class="font-display font-extrabold text-3xl md:text-5xl text-white tracking-tight reveal">Featured Prototypes &amp; Builds</h2>
+          </div>
+          
+          <!-- Dynamic Category Filters -->
+          <div class="flex flex-wrap gap-2.5 p-1 rounded-xl bg-slate-900 border border-white/5 reveal">
+            <button class="filter-btn active px-4 py-2 text-[12px] font-bold font-display uppercase tracking-wider rounded-lg border border-transparent text-slate-400 hover:text-white" data-filter="all">ALL</button>
+            <button class="filter-btn px-4 py-2 text-[12px] font-bold font-display uppercase tracking-wider rounded-lg border border-transparent text-slate-400 hover:text-white" data-filter="ai">AI &amp; NLP</button>
+            <button class="filter-btn px-4 py-2 text-[12px] font-bold font-display uppercase tracking-wider rounded-lg border border-transparent text-slate-400 hover:text-white" data-filter="edu">EDUCATION</button>
+            <button class="filter-btn px-4 py-2 text-[12px] font-bold font-display uppercase tracking-wider rounded-lg border border-transparent text-slate-400 hover:text-white" data-filter="impact">SOCIAL IMPACT</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Card 1: UrduGPT Community Lab -->
+          <div class="project-card border border-white/5 bg-slate-900/40 rounded-2xl overflow-hidden glass-panel group reveal" data-categories="ai">
+            <div class="p-6 space-y-4 flex flex-col justify-between h-full">
+              <div class="space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="px-2.5 py-1 rounded text-[10px] font-bold font-mono tracking-wider bg-amber-500/10 text-amber-400 border border-amber-500/20">AI &amp; LANGUAGE</span>
+                  <span class="text-[10px] font-mono text-slate-500">2025</span>
+                </div>
+                <h3 class="font-display font-bold text-2xl text-white group-hover:text-amber-300 transition-colors duration-300">UrduGPT Playground</h3>
+                <p class="text-sm text-slate-300 font-light leading-relaxed">
+                  A unified localized learning interface containing tailored prompt guides and fine-tuned system contexts for native speakers.
+                </p>
+              </div>
+              <div class="pt-6 border-t border-white/5 flex items-center justify-between">
+                <div class="flex gap-2">
+                  <span class="text-[10px] font-mono text-slate-400 px-2 py-0.5 rounded bg-white/5">LLMs</span>
+                  <span class="text-[10px] font-mono text-slate-400 px-2 py-0.5 rounded bg-white/5">Prompt Eng.</span>
+                </div>
+                <div class="flex items-center gap-1.5 text-xs font-bold text-amber-400 group-hover:translate-x-1 transition-transform">
+                  <span>View Lab</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Baqar Learning Station -->
+          <div class="project-card border border-white/5 bg-slate-900/40 rounded-2xl overflow-hidden glass-panel group reveal" data-categories="edu impact" style="animation-delay: 150ms;">
+            <div class="p-6 space-y-4 flex flex-col justify-between h-full">
+              <div class="space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="px-2.5 py-1 rounded text-[10px] font-bold font-mono tracking-wider bg-amber-600/10 text-amber-500 border border-amber-600/20">HARDWARE &amp; SOCIAL</span>
+                  <span class="text-[10px] font-mono text-slate-500">2025</span>
+                </div>
+                <h3 class="font-display font-bold text-2xl text-white group-hover:text-amber-300 transition-colors duration-300">Baqar Rural Stations</h3>
+                <p class="text-sm text-slate-300 font-light leading-relaxed">
+                  Providing autonomous microcomputer systems using offline visual programming tutorials to help rural primary school children build digital literacy.
+                </p>
+              </div>
+              <div class="pt-6 border-t border-white/5 flex items-center justify-between">
+                <div class="flex gap-2">
+                  <span class="text-[10px] font-mono text-slate-400 px-2 py-0.5 rounded bg-white/5">Offline Mesh</span>
+                  <span class="text-[10px] font-mono text-slate-400 px-2 py-0.5 rounded bg-white/5">SBC Hardware</span>
+                </div>
+                <div class="flex items-center gap-1.5 text-xs font-bold text-amber-500 group-hover:translate-x-1 transition-transform">
+                  <span>Explore Initiative</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Jamia AI Platform -->
+          <div class="project-card border border-white/5 bg-slate-900/40 rounded-2xl overflow-hidden glass-panel group reveal" data-categories="ai edu" style="animation-delay: 300ms;">
+            <div class="p-6 space-y-4 flex flex-col justify-between h-full">
+              <div class="space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="px-2.5 py-1 rounded text-[10px] font-bold font-mono tracking-wider bg-amber-500/10 text-amber-400 border border-amber-500/20">AI TUTORING</span>
+                  <span class="text-[10px] font-mono text-slate-500">2026</span>
+                </div>
+                <h3 class="font-display font-bold text-2xl text-white group-hover:text-amber-300 transition-colors duration-300">Jamia AI Portal</h3>
+                <p class="text-sm text-slate-300 font-light leading-relaxed">
+                  Bilingual Urdu-English AI voice instructor designed for children to query science principles and logic safely without typing English fluency.
+                </p>
+              </div>
+              <div class="pt-6 border-t border-white/5 flex items-center justify-between">
+                <div class="flex gap-2">
+                  <span class="text-[10px] font-mono text-slate-400 px-2 py-0.5 rounded bg-white/5">Gemini SDK</span>
+                  <span class="text-[10px] font-mono text-slate-400 px-2 py-0.5 rounded bg-white/5">SpeechToText</span>
+                </div>
+                <div class="flex items-center gap-1.5 text-xs font-bold text-amber-400 group-hover:translate-x-1 transition-transform">
+                  <span>Check Portal</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Social Impact Playbooks -->
+          <div class="project-card border border-white/5 bg-slate-900/40 rounded-2xl overflow-hidden glass-panel group reveal" data-categories="impact">
+            <div class="p-6 space-y-4 flex flex-col justify-between h-full">
+              <div class="space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="px-2.5 py-1 rounded text-[10px] font-bold font-mono tracking-wider bg-amber-600/10 text-amber-500 border border-amber-600/20">DOCUMENTATION</span>
+                  <span class="text-[10px] font-mono text-slate-500">2025</span>
+                </div>
+                <h3 class="font-display font-bold text-2xl text-white group-hover:text-amber-300 transition-colors duration-300">The Decentralized Lab Blueprint</h3>
+                <p class="text-sm text-slate-300 font-light leading-relaxed">
+                  An open-source digital playbook guiding organizers how to fund, set up, and structure decentralized community learning clinics in isolated contexts.
+                </p>
+              </div>
+              <div class="pt-6 border-t border-white/5 flex items-center justify-between">
+                <div class="flex gap-2">
+                  <span class="text-[10px] font-mono text-slate-400 px-2 py-0.5 rounded bg-white/5">PDF Blueprint</span>
+                  <span class="text-[10px] font-mono text-slate-400 px-2 py-0.5 rounded bg-white/5">NGO Kit</span>
+                </div>
+                <div class="flex items-center gap-1.5 text-xs font-bold text-amber-500 group-hover:translate-x-1 transition-transform">
+                  <span>Download Guide</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Creator Academy Hub -->
+          <div class="project-card border border-white/5 bg-slate-900/40 rounded-2xl overflow-hidden glass-panel group reveal" data-categories="edu" style="animation-delay: 150ms;">
+            <div class="p-6 space-y-4 flex flex-col justify-between h-full">
+              <div class="space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="px-2.5 py-1 rounded text-[10px] font-bold font-mono tracking-wider bg-amber-500/10 text-amber-450 border border-amber-500/20">ONLINE BOOTCAMP</span>
+                  <span class="text-[10px] font-mono text-slate-500">2026</span>
+                </div>
+                <h3 class="font-display font-bold text-2xl text-white group-hover:text-amber-300 transition-colors duration-300">AI Creators Urdu Masterclass</h3>
+                <p class="text-sm text-slate-300 font-light leading-relaxed">
+                  Curriculum platform teaching local digital creators how to use automated workflows, translation models, and visual design assets.
+                </p>
+              </div>
+              <div class="pt-6 border-t border-white/5 flex items-center justify-between">
+                <div class="flex gap-2">
+                  <span class="text-[10px] font-mono text-slate-400 px-2 py-0.5 rounded bg-white/5">Video Hub</span>
+                  <span class="text-[10px] font-mono text-slate-400 px-2 py-0.5 rounded bg-white/5">SEO Playbook</span>
+                </div>
+                <div class="flex items-center gap-1.5 text-xs font-bold text-amber-400 group-hover:translate-x-1 transition-transform">
+                  <span>Enter Academy</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Al-Kalam Vector Base -->
+          <div class="project-card border border-white/5 bg-slate-900/40 rounded-2xl overflow-hidden glass-panel group reveal" data-categories="ai" style="animation-delay: 300ms;">
+            <div class="p-6 space-y-4 flex flex-col justify-between h-full">
+              <div class="space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="px-2.5 py-1 rounded text-[10px] font-bold font-mono tracking-wider bg-amber-600/10 text-amber-500 border border-amber-600/20">DATA ENGINEERING</span>
+                  <span class="text-[10px] font-mono text-slate-500">2026</span>
+                </div>
+                <h3 class="font-display font-bold text-2xl text-white group-hover:text-amber-300 transition-colors duration-300">Al-Kalam Embeddings</h3>
+                <p class="text-sm text-slate-300 font-light leading-relaxed">
+                  An open dataset and vector index model mapping complex technical engineering literature directly to semantic concepts in Roman Urdu.
+                </p>
+              </div>
+              <div class="pt-6 border-t border-white/5 flex items-center justify-between">
+                <div class="flex gap-2">
+                  <span class="text-[10px] font-mono text-slate-400 px-2 py-0.5 rounded bg-white/5">Vector DB</span>
+                  <span class="text-[10px] font-mono text-slate-400 px-2 py-0.5 rounded bg-white/5">PyTorch NLP</span>
+                </div>
+                <div class="flex items-center gap-1.5 text-xs font-bold text-amber-550 group-hover:translate-x-1 transition-transform">
+                  <span>Inspect Data</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. CORE INITIATIVES -->
+    <section id="initiatives" class="py-24 px-6 relative">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+          <span class="font-mono text-amber-400 font-bold text-xs tracking-widest uppercase block reveal">GRASSR00TS IMPACT</span>
+          <h2 class="font-display font-extrabold text-3xl md:text-5xl text-white tracking-tight reveal">Strategic Initiatives</h2>
+          <p class="text-slate-400 font-light text-base md:text-lg reveal">
+            Creating an enduring ecosystem of knowledge transfer and technical accessibility across linguistic and geographic divides.
+          </p>
+        </div>
+
+        <div class="space-y-12">
+          
+          <!-- Initiative 1 -->
+          <div class="p-8 rounded-2xl glass-panel relative overflow-hidden group reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div class="lg:col-span-8 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-amber-500/10 text-amber-400 text-xs font-bold font-mono tracking-wider">
+                  ACTIVELY RUNNING
+                </div>
+                <h3 class="font-display font-extrabold text-2xl md:text-3xl text-white">Community Urdu AI Bootcamps</h3>
+                <p class="text-slate-300 font-light text-sm md:text-base leading-relaxed">
+                  Translating advanced prompt engineering methodologies, foundational token limits, and agent architectures into interactive, highly visual Urdu workshops. Educated over 10,000 local developers and non-technical founders locally.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-3 text-slate-400 text-xs font-mono">
+                  <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> Local Language Content</span>
+                  <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i> Free Public Access</span>
+                  <span class="flex items-center gap-1.5"><i data-lucide="users" class="w-4 h-4 text-amber-400"></i> Weekly Hands-on Projects</span>
+                </div>
+              </div>
+              <div class="lg:col-span-4 flex flex-col justify-center h-full p-6 bg-slate-900/60 rounded-xl border border-white/5 text-center space-y-2">
+                <span class="text-amber-400 font-display text-4xl font-extrabold">10,000+</span>
+                <span class="text-slate-400 text-xs font-mono uppercase tracking-wider">Active Learners Mobilized</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Initiative 2 -->
+          <div class="p-8 rounded-2xl glass-panel relative overflow-hidden group reveal" style="animation-delay: 150ms;">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div class="lg:col-span-8 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-amber-600/15 text-amber-500 text-xs font-bold font-mono tracking-wider">
+                  SOCIAL ENGAGEMENT
+                </div>
+                <h3 class="font-display font-extrabold text-2xl md:text-3xl text-white">Baqar Rural Learning Labs</h3>
+                <p class="text-slate-300 font-light text-sm md:text-base leading-relaxed">
+                  Working directly with rural administrations to launch localized solar-powered classrooms. These spaces use localized computer interfaces to deliver practical software instruction and basic programming foundations, bypassing rural connection limits.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-3 text-slate-400 text-xs font-mono">
+                  <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-amber-500"></i> Solar-Powered Facilities</span>
+                  <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-amber-500"></i> Offline Coding Nodes</span>
+                  <span class="flex items-center gap-1.5"><i data-lucide="graduation-cap" class="w-4 h-4 text-amber-500"></i> Local Teacher Training</span>
+                </div>
+              </div>
+              <div class="lg:col-span-4 flex flex-col justify-center h-full p-6 bg-slate-900/60 rounded-xl border border-white/5 text-center space-y-2">
+                <span class="text-amber-500 font-display text-4xl font-extrabold">15+</span>
+                <span class="text-slate-400 text-xs font-mono uppercase tracking-wider">Rural Centers Commissioned</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Initiative 3 -->
+          <div class="p-8 rounded-2xl glass-panel relative overflow-hidden group reveal" style="animation-delay: 300ms;">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div class="lg:col-span-8 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-amber-500/10 text-amber-400 text-xs font-bold font-mono tracking-wider">
+                  DIGITAL CREATION
+                </div>
+                <h3 class="font-display font-extrabold text-2xl md:text-3xl text-white">Interactive Video Creator Ecosystem</h3>
+                <p class="text-slate-300 font-light text-sm md:text-base leading-relaxed">
+                  Structuring Urdu video courses across YouTube, Reels, and educational forums detailing real-world client acquisition techniques and how to craft applications utilizing the Gemini SDK in low-resource environments.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-3 text-slate-400 text-xs font-mono">
+                  <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-amber-500"></i> Free Digital Mediums</span>
+                  <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-amber-500"></i> No-Code / Low-Code focus</span>
+                  <span class="flex items-center gap-1.5"><i data-lucide="play" class="w-4 h-4 text-amber-500"></i> Visual Screen Guides</span>
+                </div>
+              </div>
+              <div class="lg:col-span-4 flex flex-col justify-center h-full p-6 bg-slate-900/60 rounded-xl border border-white/5 text-center space-y-2">
+                <span class="text-amber-400 font-display text-4xl font-extrabold">1.5M+</span>
+                <span class="text-slate-400 text-xs font-mono uppercase tracking-wider">Total Video Impressions</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. EXPERTISE & SKILLS SECTION -->
+    <section id="skills" class="py-24 px-6 bg-slate-950/20 relative">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-4 space-y-4">
+            <span class="font-mono text-amber-400 font-bold text-xs tracking-widest uppercase block reveal">COMPETENCY MAP</span>
+            <h2 class="font-display font-extrabold text-3xl md:text-5xl text-white tracking-tight reveal leading-tight">My Domain Expertise</h2>
+            <p class="text-slate-400 font-light text-sm md:text-base leading-relaxed reveal">
+              Synthesizing cutting-edge language intelligence paradigms with on-the-ground rural education delivery frameworks.
+            </p>
+            <div class="pt-4 reveal">
+              <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-amber-400 hover:text-amber-300">
+                <span>View project case studies</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Skill 1 -->
+            <div class="p-6 rounded-xl border border-white/5 bg-slate-900/30 space-y-3 reveal">
+              <div class="flex items-center gap-3">
+                <i data-lucide="cpu" class="w-5 h-5 text-amber-450 animate-pulse"></i>
+                <h3 class="font-display font-bold text-lg text-white">AI &amp; LLMs (Urdu NLP)</h3>
+              </div>
+              <p class="text-xs text-slate-400 font-light leading-relaxed">
+                Expert prompt alignment, semantic caching, Roman Urdu transcription mapping, integration of Gemini APIs, and specialized fine-tuning instruction designs.
+              </p>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="p-6 rounded-xl border border-white/5 bg-slate-900/30 space-y-3 reveal" style="animation-delay: 150ms;">
+              <div class="flex items-center gap-3">
+                <i data-lucide="book-open" class="w-5 h-5 text-amber-500"></i>
+                <h3 class="font-display font-bold text-lg text-white">Curriculum &amp; Edu-Design</h3>
+              </div>
+              <p class="text-xs text-slate-400 font-light leading-relaxed">
+                Formulating visual, conceptual learning tracks in localized socio-cultural frames. Experience designing programming modules for primary and middle schoolers.
+              </p>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="p-6 rounded-xl border border-white/5 bg-slate-900/30 space-y-3 reveal" style="animation-delay: 300ms;">
+              <div class="flex items-center gap-3">
+                <i data-lucide="video" class="w-5 h-5 text-amber-450"></i>
+                <h3 class="font-display font-bold text-lg text-white">Digital Content Creation</h3>
+              </div>
+              <p class="text-xs text-slate-400 font-light leading-relaxed">
+                Advanced digital storytelling, community marketing strategies, viral SEO architecture, video content scripting, and tech platform tutorials creation.
+              </p>
+            </div>
+
+            <!-- Skill 4 -->
+            <div class="p-6 rounded-xl border border-white/5 bg-slate-900/30 space-y-3 reveal" style="animation-delay: 450ms;">
+              <div class="flex items-center gap-3">
+                <i data-lucide="globe" class="w-5 h-5 text-amber-500"></i>
+                <h3 class="font-display font-bold text-lg text-white">Social Entrepreneurship</h3>
+              </div>
+              <p class="text-xs text-slate-400 font-light leading-relaxed">
+                Founder-level resource mobilization, setting up microcomputer labs using sustainable hardware units, non-profit community coordination, and local operations.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. IMPACT & HIGHLIGHTS -->
+    <section id="impact" class="py-24 px-6 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="max-w-3xl mx-auto text-center space-y-4 mb-20">
+          <span class="font-mono text-amber-400 font-bold text-xs tracking-widest uppercase block reveal">TRACK RECORD</span>
+          <h2 class="font-display font-extrabold text-3xl md:text-5xl text-white tracking-tight reveal">Core Milestones &amp; Impact</h2>
+          <p class="text-slate-400 font-light text-base md:text-lg reveal">
+            True social innovation is measured through measurable community transformation and the democratization of localized developer networks.
+          </p>
+        </div>
+
+        <!-- Counter Grid of Stats -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          
+          <div class="p-8 rounded-2xl glass-panel relative text-center space-y-3 border-b-2 border-b-amber-500/40 reveal">
+            <span class="text-xs font-mono font-bold tracking-widest text-slate-500 uppercase block">URDU AI</span>
+            <div class="text-5xl md:text-6xl font-display font-extrabold text-white">
+              <span class="stat-count text-gradient-primary" data-target="10000" data-suffix="+">0</span>
+            </div>
+            <p class="text-sm text-slate-400 font-light">Trained Urdu Developers &amp; Creators</p>
+          </div>
+
+          <div class="p-8 rounded-2xl glass-panel relative text-center space-y-3 border-b-2 border-b-amber-600/40 reveal" style="animation-delay: 150ms;">
+            <span class="text-xs font-mono font-bold tracking-widest text-slate-500 uppercase block">RURAL ACCESS</span>
+            <div class="text-5xl md:text-6xl font-display font-extrabold text-white">
+              <span class="stat-count text-gradient-primary" data-target="15" data-suffix="+">0</span>
+            </div>
+            <p class="text-sm text-slate-400 font-light">Autonomous Stations Established</p>
+          </div>
+
+          <div class="p-8 rounded-2xl glass-panel relative text-center space-y-3 border-b-2 border-b-amber-500/40 reveal" style="animation-delay: 300ms;">
+            <span class="text-xs font-mono font-bold tracking-widest text-slate-500 uppercase block">AWARENESS IMPRESSIONS</span>
+            <div class="text-5xl md:text-6xl font-display font-extrabold text-white">
+              <span class="stat-count text-gradient-primary" data-target="1500000" data-suffix="">0</span>
+            </div>
+            <p class="text-sm text-slate-400 font-light">Localized Video Educational Reach</p>
+          </div>
+
+          <div class="p-8 rounded-2xl glass-panel relative text-center space-y-3 border-b-2 border-b-amber-600/40 reveal" style="animation-delay: 450ms;">
+            <span class="text-xs font-mono font-bold tracking-widest text-slate-500 uppercase block">OPEN REPOS</span>
+            <div class="text-5xl md:text-6xl font-display font-extrabold text-white">
+              <span class="stat-count text-gradient-primary" data-target="20" data-suffix="+">0</span>
+            </div>
+            <p class="text-sm text-slate-400 font-light">AI Prompt Libraries Published</p>
+          </div>
+
+        </div>
+
+        <!-- Visionary Quote / Narrative Highlight -->
+        <div class="p-8 md:p-12 rounded-3xl bg-slate-900/40 border border-white/5 relative overflow-hidden group reveal">
+          <div class="absolute top-0 right-0 p-8 text-neutral-800 pointer-events-none select-none">
+            <i data-lucide="quote" class="w-24 h-24 stroke-1 opacity-20"></i>
+          </div>
+          <div class="relative z-10 max-w-4xl space-y-6">
+            <h3 class="font-display font-bold text-xl md:text-2xl text-amber-300">Democratizing technology means that native language should never map to a limitation.</h3>
+            <p class="text-slate-300 font-light text-base md:text-lg leading-relaxed">
+              "We must treat frontier models as tools to augment collective community intelligence. If we do not make artificial intelligence easily understandable in native ecosystems and construct accessible physical gateways in remote villages, we risk creating a profound digital caste system. Our target is a model of shared digital prosperity."
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-amber-500/10 flex items-center justify-center font-display text-xs font-bold text-amber-450 border border-amber-500/20">
+                FK
+              </div>
+              <div>
+                <span class="block text-sm font-bold text-white leading-none">Fahad Khan</span>
+                <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest leading-none mt-1 block">Founder &amp; AI Advocate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. CONTACT SECTION -->
+    <section id="contact" class="py-24 px-6 relative bg-slate-950/40">
+      <div class="max-w-7xl mx-auto">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          <!-- Column Left: Personal Outreach Pitch -->
+          <div class="lg:col-span-5 space-y-8">
+            <div class="space-y-4">
+              <span class="font-mono text-amber-400 font-bold text-xs tracking-widest uppercase block reveal">GET IN TOUCH</span>
+              <h2 class="font-display font-extrabold text-3xl md:text-5xl text-white tracking-tight reveal">Let's Construct Something True of Purpose.</h2>
+              <p class="text-slate-400 font-light text-sm md:text-base leading-relaxed reveal">
+                Seeking founder-level advisory partnerships, public sector technology integration pipelines, speaking engagements in vernacular AI systems, or structured collaborative opportunities.
+              </p>
+            </div>
+
+            <!-- Social Card list -->
+            <div class="space-y-4 reveal">
+              
+              <!-- Contact Card: Email -->
+              <div class="p-5 rounded-xl bg-slate-900 border border-white/5 flex items-center justify-between group hover:border-amber-500/30 transition-all duration-300">
+                <div class="flex items-center gap-4">
+                  <div class="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-400 border border-amber-500/20">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <span class="block text-[10px] font-mono text-slate-500 uppercase tracking-widest">EMAIL ADDRESS</span>
+                    <span class="block text-sm font-semibold text-white group-hover:text-amber-300 transition-colors">3brotherskhan635@gmail.com</span>
+                  </div>
+                </div>
+                <button id="copy-email-btn" aria-label="Copy Email Address to Clipboard" class="w-8 h-8 rounded bg-white/5 hover:bg-amber-500/10 border border-white/10 hover:border-amber-500/30 flex items-center justify-center text-slate-300 hover:text-amber-300 transition-colors">
+                  <i data-lucide="copy" class="w-4 h-4"></i>
+                </button>
+              </div>
+
+              <!-- Contact Card: External handles -->
+              <div class="grid grid-cols-2 gap-4">
+                
+                <a href="https://github.com/3brotherskhan" target="_blank" rel="noopener noreferrer" class="p-5 rounded-xl bg-slate-900 border border-white/5 flex flex-col justify-between hover:border-amber-500/20 group transition-all duration-300">
+                  <div class="flex items-center justify-between mb-4">
+                    <div class="w-10 h-10 rounded-lg bg-slate-950 flex items-center justify-center text-slate-400 group-hover:text-white transition-colors">
+                      <i data-lucide="github" class="w-5 h-5"></i>
+                    </div>
+                    <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-600 group-hover:text-amber-400 transition-colors"></i>
+                  </div>
+                  <div>
+                    <span class="block text-[9px] font-mono text-slate-500 uppercase tracking-widest">GITHUB RESOURCE</span>
+                    <span class="block text-sm font-semibold text-slate-300 group-hover:text-white transition-colors">@3brotherskhan</span>
+                  </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/3brotherskhan" target="_blank" rel="noopener noreferrer" class="p-5 rounded-xl bg-slate-900 border border-white/5 flex flex-col justify-between hover:border-amber-500/25 group transition-all duration-300">
+                  <div class="flex items-center justify-between mb-4">
+                    <div class="w-10 h-10 rounded-lg bg-slate-950 flex items-center justify-center text-slate-400 group-hover:text-amber-450 transition-colors">
+                      <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    </div>
+                    <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-600 group-hover:text-amber-450 transition-colors"></i>
+                  </div>
+                  <div>
+                    <span class="block text-[9px] font-mono text-slate-500 uppercase tracking-widest">LINKEDIN BIO</span>
+                    <span class="block text-sm font-semibold text-slate-300 group-hover:text-white transition-colors">Fahad Khan</span>
+                  </div>
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Column Right: Contact Form Panel -->
+          <div class="lg:col-span-7 p-8 md:p-10 rounded-3xl glass-panel relative border border-white/5 reveal">
+            <h3 class="font-display font-extrabold text-2xl text-white mb-2">Send an Advisory Request</h3>
+            <p class="text-sm text-slate-400 font-light mb-8">
+              Fill in the parameters below. I respond to serious collaborations within 48 hours.
+            </p>
+
+            <form id="portfolio-contact-form" class="space-y-6">
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div class="space-y-2">
+                  <label for="form-name" class="block text-[11px] font-mono text-slate-400 tracking-wider uppercase font-semibold">YOUR NAME</label>
+                  <input type="text" id="form-name" placeholder="John Doe" required class="w-full bg-slate-950 border border-white/10 hover:border-white/20 focus:border-amber-500 focus:ring-1 focus:ring-amber-500/50 rounded-xl px-4 py-3 text-slate-200 placeholder:text-slate-600 focus:outline-none transition-all">
+                </div>
+
+                <div class="space-y-2">
+                  <label for="form-email" class="block text-[11px] font-mono text-slate-400 tracking-wider uppercase font-semibold">EMAIL ADDRESS</label>
+                  <input type="email" id="form-email" placeholder="john@example.com" required class="w-full bg-slate-950 border border-white/10 hover:border-white/20 focus:border-amber-500 focus:ring-1 focus:ring-amber-500/50 rounded-xl px-4 py-3 text-slate-220 placeholder:text-slate-600 focus:outline-none transition-all">
+                </div>
+
+              </div>
+
+              <div class="space-y-2">
+                <label for="form-subject" class="block text-[11px] font-mono text-slate-400 tracking-wider uppercase font-semibold">COLLABORATION LEVEL</label>
+                <select id="form-subject" class="w-full bg-slate-950 border border-white/10 hover:border-white/20 focus:border-amber-500 focus:ring-1 focus:ring-amber-500/50 rounded-xl px-4 py-3 text-slate-300 focus:outline-none transition-all">
+                  <option value="advisory">Strategic Founder-Level Advising</option>
+                  <option value="public-sector">Public Sector AI Integration Pipeline</option>
+                  <option value="education">Rural Tech Lab Support / Funding</option>
+                  <option value="creator">Digital Content Collaboration</option>
+                  <option value="general">Urdu Prompt Library Dev / Outreach</option>
+                </select>
+              </div>
+
+              <div class="space-y-2">
+                <label for="form-message" class="block text-[11px] font-mono text-slate-400 tracking-wider uppercase font-semibold">PROJECT SPECIFICATION</label>
+                <textarea id="form-message" rows="5" placeholder="Outline the collaborative timeline and primary target scope here..." required class="w-full bg-slate-950 border border-white/10 hover:border-white/20 focus:border-amber-500 focus:ring-1 focus:ring-amber-500/50 rounded-xl px-4 py-3 text-slate-200 placeholder:text-slate-600 focus:outline-none transition-all"></textarea>
+              </div>
+
+              <!-- Button & Loader -->
+              <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold font-display tracking-wider hover:shadow-lg hover:shadow-amber-500/15 group transform hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center cursor-pointer">
+                <span class="btn-text flex items-center justify-center gap-2">
+                  <span>Transmit Advisory Request</span>
+                  <i data-lucide="send" class="w-4 h-4 group-hover:translate-x-0.5 transition-transform"></i>
+                </span>
+                <span class="btn-loader hidden flex items-center justify-center gap-2">
+                  <svg class="animate-spin h-5 w-5 text-slate-950" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  </svg>
+                  <span>Processing secure transmission...</span>
+                </span>
+              </button>
+
+              <!-- Success Alert Slot -->
+              <div id="form-status" class="hidden"></div>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 8. FOOTER SECTION -->
+  <footer class="bg-slate-950 py-16 px-6 border-t border-white/5 relative z-10 text-slate-500 text-xs">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+      
+      <div class="flex flex-col gap-2 text-center md:text-left">
+        <span class="font-display font-bold text-slate-300 text-sm tracking-wider">FAHAD KHAN</span>
+        <span class="font-mono text-[10px]">AI Educator • Digital Creator • Community Innovator</span>
+      </div>
+
+      <nav class="flex flex-wrap items-center justify-center gap-8 font-mono uppercase tracking-wider text-[10px]">
+        <a href="#about" class="hover:text-amber-400 transition-colors">ABOUT</a>
+        <a href="#projects" class="hover:text-amber-400 transition-colors">PROJECTS</a>
+        <a href="#initiatives" class="hover:text-amber-400 transition-colors">INITIATIVES</a>
+        <a href="#skills" class="hover:text-amber-400 transition-colors">SKILLS</a>
+        <a href="#impact" class="hover:text-amber-400 transition-colors">IMPACT</a>
+      </nav>
+
+      <div class="flex flex-col items-center md:items-end gap-2 text-[10px] font-mono">
+        <span>© 2026 Fahad Khan. All rights reserved.</span>
+        <span>Ready for deployment validation.</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Core Javascript Loader -->
+  <script src="./script.js"></script>
+</body>
+</html>
